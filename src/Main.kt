@@ -4,6 +4,9 @@ fun main() {
     val persona2 = Persona("Pepe",70.5, 2.00,0.0)
     val persona3 = Persona("Juan", 85.0, 1.80, 0.0)
 
+    persona1.imc = persona1.calcularIMC(persona1.peso,persona1.altura)
+    persona2.imc = persona2.calcularIMC(persona2.peso,persona2.altura)
+
     //Modificar nombre persona 1
     println("Persona1\n${persona1.toString()}")
     println("¿Desea modificar su nombre (s/n)?")
